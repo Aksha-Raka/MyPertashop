@@ -8,7 +8,6 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* ===== HEADER (1 baris: logo + nav + search + masuk) ===== */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -83,7 +82,6 @@ body {
     background-color: #2340b8;
 }
 
-/* ===== HERO SECTION ===== */
 #home {
     display: flex;
     align-items: center;
@@ -149,7 +147,6 @@ body {
     background-color: #2340b8;
 }
 
-/* ===== HERO IMAGE ===== */
 .container {
     flex: 1;
     min-width: 280px;
@@ -164,7 +161,6 @@ body {
     display: block;
 }
 
-/* ===== FEATURE CARDS (4 kolom sejajar) ===== */
 .feature-grid {
     display: flex;
     gap: 16px;
@@ -212,7 +208,6 @@ body {
     line-height: 1.4;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
     .main-nav {
         display: none;
