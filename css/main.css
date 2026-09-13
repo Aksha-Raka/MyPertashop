@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ===== HEADER (1 baris: logo + nav + search + masuk) ===== */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo img {
+    height: 24px;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #1a1a2e;
+}
+
+.pertashop-text {
+    color: #e63946;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: #3b6fe0;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-icon {
+    color: #333;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-masuk {
+    background-color: #2d4fd7;
+    color: white;
+    padding: 9px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-masuk:hover {
+    background-color: #2340b8;
+}
+
+/* ===== HERO SECTION ===== */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px 40px;
+    background: linear-gradient(to bottom, #eaf2fb, #ffffff);
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 480px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.mintext {
+    color: #3b6fe0;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.brand .my {
+    color: #3b6fe0;
+}
+
+.brand .pertashop {
+    color: #e63946;
+}
+
+.hero-text p {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 16px 0 0 0;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2d4fd7;
+    color: white;
+    padding: 13px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 22px;
+}
+
+.btn:hover {
+    background-color: #2340b8;
+}
+
+/* ===== HERO IMAGE ===== */
+.container {
+    flex: 1;
+    min-width: 280px;
+    max-width: 480px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+/* ===== FEATURE CARDS (4 kolom sejajar) ===== */
+.feature-grid {
+    display: flex;
+    gap: 16px;
+    padding: 0 40px 50px 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.feature-card {
+    background-color: #eaf2fb;
+    border-radius: 14px;
+    padding: 20px;
+    width: 200px;
+    text-align: left;
+}
+
+.icon-circle {
+    width: 42px;
+    height: 42px;
+    background-color: #3b6fe0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.icon-circle i {
+    color: white;
+    font-size: 18px;
+}
+
+.feature-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0 0 6px 0;
+}
+
+.feature-card p {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .main-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+    .feature-card {
+        width: 45%;
+    }
+}

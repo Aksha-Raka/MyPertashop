@@ -5,70 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPertashop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <section id="home">
-        <p class="mintext" id="Mini-Text">SPBU MINI ANDALAN</p>
-        <div class="hero-text">
-            <h1>Mudah, Cepat,<br>dan Dekat</h1>
-            <h1 class="brand">dengan <span class="my">My</span><span class="pertashop">Pertashop</span></h1>
-            
-            <p>Dapatkan BBM berkualitas, produk Pertamina</p>
-            <p>dan berbagai layanan lainnya di Mypertashop</p>
+    <header class="main-header">
+        <div class="logo">
+            <img src="assets/logo-pertamina.png" alt="Pertamina">
+            <span class="logo-text">| My<span class="pertashop-text">Pertashop</span></span>
         </div>
-        <a href="#lokasi" class="btn" id="btn">Cari Lokasi Pertashop</a>
-    </section>
-    <section>
-        <div class="container">
-            <video autoplay muted loop>
-                <source src="video.mp4" type="video/mp4">
-            </video>
-        </div>
-
-    </section>
-    <section>
-        <div class="navbar-owner">
+        <nav class="main-nav">
             <ul>
                 <li><a href="#home">Beranda</a></li>
-                <li><a href="#promo">Promo</a></li>
-                <li><a href="#tentang-kami">Tentang</a></li>
-                <li><a href="#pengeluaran-pemasukan">Pengeluaran & Pemasukan</a></li>
-            </ul>
-        </div>
-        <div class="navbar-review">
-            <ul>
-                
-                <li><a href="#home">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
                 <li><a href="#promo">Promo</a></li>
                 <li><a href="#lokasi">Lokasi</a></li>
                 <li><a href="#tentang-kami">Tentang</a></li>
-
             </ul>
+        </nav>
+        <div class="header-actions">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <a href="#login" class="btn-masuk">Masuk</a>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero-text">
+            <p class="mintext">SPBU MINI ANDALAN</p>
+            <h1>Mudah, Cepat,<br>dan Dekat</h1>
+            <h1 class="brand">dengan <span class="my">My</span><span class="pertashop">Pertashop</span></h1>
+            <p>Dapatkan BBM berkualitas, produk Pertamina<br>dan berbagai layanan lainnya di MyPertashop.</p>
+            <a href="#lokasi" class="btn">Cari Lokasi Pertashop <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="container">
+            <img src="assets/pertashop.jpg" alt="Hero Image" class="hero-image">
         </div>
     </section>
+
     <div class="feature-grid">
-    <div class="feature-card">
-        <div class="icon-circle"><i class="fa-solid fa-gas-pump"></i></div>
-        <h3>BBM Berkualitas</h3>
-        <p>Untuk perjalanan lebih aman</p>
+        <div class="feature-card">
+            <div class="icon-circle"><i class="fa-solid fa-gas-pump"></i></div>
+            <h3>BBM Berkualitas</h3>
+            <p>Untuk perjalanan lebih aman</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon-circle"><i class="fa-solid fa-bag-shopping"></i></div>
+            <h3>Produk Pertamina</h3>
+            <p>Hingga kebutuhan sehari-hari</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Lokasi Terdekat</h3>
+            <p>Cari Pertashop di sekitarmu</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon-circle"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Transaksi Mudah</h3>
+            <p>Lewat aplikasi MyPertamina</p>
+        </div>
     </div>
 
-    <div class="feature-card">
-        <div class="icon-circle"><i class="fa-solid fa-bag-shopping"></i></div>
-        <h3>Produk Pertamina</h3>
-        <p>Hingga kebutuhan sehari-hari</p>
-    </div>
-
-    <div class="feature-card">
-        <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
-        <h3>Lokasi Terdekat</h3>
-        <p>Cari Pertashop di sekitarmu</p>
-    </div>
-
- 
-</div>
-
-<script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
