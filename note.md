@@ -13,3 +13,7 @@ day 1 9/13/2026 {
     Tierison - Resolved merge conflict in index.html after Aksha's 
     changes (maps.js, lokasi.html). 10.30PM
 }
+
+day 3 {
+    fixing ui bug that dandi make on FaQ section 8:56PM
+}
