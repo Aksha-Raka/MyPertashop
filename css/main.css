@@ -209,6 +209,11 @@ body {
 }
 
 #tentang-kami {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 60px 40px;
     background-color: #f9fafb;
 }
@@ -216,21 +221,24 @@ body {
 .Judul-Foq {
     font-size: 28px;
     font-weight: 800;
+    display: flex;
+    justify-content: center;
     color: #1a1a2e;
-    margin-bottom: 36px;
+    margin-bottom: 64px;
     text-align: center;
 }
 
 .faq-list {
     display: grid;
     gap: 16px;
-    max-width: 900px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
 .faq-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 18px;
     background-color: #ffffff;
     border: 1px solid #eef0f4;
